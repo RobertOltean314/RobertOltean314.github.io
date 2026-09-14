@@ -215,6 +215,11 @@ code { font-family: var(--mono); font-size: .9em; background: var(--surface-2); 
 .about__prose p { font-size: 16.5px; color: var(--text-dim); margin-bottom: 1.2em; }
 .about__prose a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-line); }
 .about__prose a:hover { border-bottom-color: var(--accent); }
+.about__lead { font-size: 1.06rem; color: var(--text); letter-spacing: -.015em; margin-bottom: 1.7em; }
+.about__h { display: block; color: #fff; font-weight: 600; letter-spacing: -.022em; margin-bottom: .3em; }
+.about__prose p + p { margin-top: 1.5em; }
+
+.about__now { position: sticky; top: 88px; align-self: start; }
 .about__nowtitle { font-size: 13px; color: var(--text-faint); font-weight: 500; margin: 0 0 18px; letter-spacing: .02em; }
 
 .ticks li {
@@ -411,6 +416,7 @@ code { font-family: var(--mono); font-size: .9em; background: var(--surface-2); 
   .hero__inner { grid-template-columns: 1fr; gap: 44px; }
   .hero__card { position: static; max-width: 420px; }
   .about, .skills, .contact { grid-template-columns: 1fr; gap: 44px; }
+  .about__now { position: static; }
   .feats { grid-template-columns: 1fr; }
 }
 

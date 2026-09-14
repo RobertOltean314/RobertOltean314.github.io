@@ -126,19 +126,24 @@
 
     <div class="about">
       <div class="about__prose">
-        <p>I'm a backend developer at <strong>Agile Freaks</strong> in Sibiu, working in Ruby on Rails on a large production platform — a monolith alongside several microservices behind an API gateway. Day to day that means shipping features end to end, tracing a request across service boundaries, and moving functionality out of the monolith without breaking the monolith.</p>
-        <p>Before that I spent two years at <strong>NTT DATA Romania</strong>, building C#/.NET and full-stack React work inside small Agile teams, where I learned what code review and production ownership actually look like.</p>
-        <p>My degree is a B.Eng. in Computer Engineering from <strong>Lucian Blaga University of Sibiu</strong>, with a blockchain specialization. My thesis, <a href="#p-TaxChain">TaxChain</a>, used Groth16 zero-knowledge proofs to let taxpayers prove VAT compliance without revealing a single invoice — and it's still the project I'm proudest of.</p>
+        <p class="about__lead">I'm a backend developer based in Sibiu. The short version of how I work:</p>
+
+        <p><strong class="about__h">I ask questions until I actually understand.</strong> That used to feel like admitting I didn't know something. Now I think it's the cheapest tool I have — five minutes of looking uninformed beats two days building the wrong thing. If a ticket doesn't make sense to me, I'd rather say so than quietly guess at what somebody meant.</p>
+
+        <p><strong class="about__h">I read before I write.</strong> Dropped into code I don't know, my instinct isn't to start typing. It's to follow a single request all the way through and find out what shape the system is really in. You can't add to something well until you understand how it already holds together.</p>
+
+        <p><strong class="about__h">I want to know why it works.</strong> I'm uncomfortable leaning on an abstraction I couldn't explain, which is most of why my own projects look the way they do. I implemented <a href="#p-TaxChain">Groth16 proofs</a> and wrote Huffman, LZ77 and LZW by hand — not because the libraries don't exist, but because importing one would have left me with something I could use and couldn't explain.</p>
+
+        <p>What pulls me into a problem is a real constraint. Invoice data can't legally go on a public blockchain — so how do you prove a VAT total without publishing the invoices behind it? A university was paying its staff out of a spreadsheet held together by macros — so what replaces that? I like work where the difficulty is genuine, and where somebody's day is measurably less painful at the end of it.</p>
       </div>
 
       <div class="about__now">
-        <h3 class="about__nowtitle mono">// currently digging into</h3>
+        <h3 class="about__nowtitle mono">// curious about right now</h3>
         <ul class="ticks">
-          <li>Moving functionality out of a monolith without breaking the monolith</li>
-          <li>Auth across service boundaries — a gateway in front, an identity provider federating against the app's own user table</li>
-          <li>Event-driven side effects over Kafka for CRM and reporting sync</li>
+          <li>Zero-knowledge proofs — still poking at the Groth16 circuits left over from my thesis</li>
+          <li>Event-driven design with Kafka</li>
           <li>Layered Rails beyond MVC — services, operations, contracts, presenters, policies</li>
-          <li>Zero-knowledge proofs — Groth16 circuits in Rust, left over from my thesis and still poking at them</li>
+          <li>Reading large unfamiliar codebases quickly</li>
         </ul>
       </div>
     </div>
@@ -164,12 +169,11 @@
           </div>
           <p class="tl__org"><strong>Agile Freaks</strong> <span class="sep">·</span> Sibiu, Romania</p>
           <ul class="ticks">
-            <li>Developed and shipped <strong>10 backend features</strong> from implementation through production for the UNGC Platform using Ruby on Rails.</li>
+            <li>Shipped <strong>14 changes to production</strong> on the UNGC Platform using Ruby on Rails — <strong>8 backend features</strong> and <strong>6 production-impacting bug fixes</strong>, each covered by regression tests to prevent recurrence.</li>
             <li>Worked across a Rails monolith and multiple microservices behind a <strong>Kong API Gateway</strong>, coordinating changes across services.</li>
             <li>Extended a read-only microservice with write capabilities and new API endpoints, enabling functionality to migrate out of the monolith.</li>
             <li>Expanded participant portal functionality to support additional organizations and enable self-service reporting.</li>
             <li>Implemented data synchronization and backup logic to keep platform data consistent with connected CRM records.</li>
-            <li>Solved <strong>2 production-impacting bugs</strong> and added regression tests to prevent recurrence.</li>
           </ul>
           <ul class="chips">
             <li>Ruby on Rails</li><li>PostgreSQL</li><li>Kong</li><li>Kafka</li><li>Keycloak</li><li>Docker</li><li>Minitest</li>
@@ -186,13 +190,13 @@
           </div>
           <p class="tl__org"><strong>NTT DATA</strong> <span class="sep">·</span> Sibiu, Romania</p>
           <ul class="ticks">
-            <li>Developed backend functionality for a Windows Forms application as part of a <strong>4-person Agile team</strong>.</li>
-            <li>Contributed to a production software project within a <strong>7-developer team</strong>, participating in code reviews and technical improvement discussions.</li>
-            <li>Built a strong foundation in C# and .NET through professional software development and training.</li>
-            <li>Developed full-stack projects using React, TypeScript and Node.js, including real-time applications and data-driven platforms.</li>
+            <li>Developed backend features in <strong>C# and ASP.NET</strong> for internal systems, working across projects for multiple clients.</li>
+            <li>Worked as part of a <strong>4-person Agile team</strong>, and contributed to a production project within a <strong>7-developer team</strong> — taking part in code reviews and technical improvement discussions.</li>
+            <li>Built a strong foundation in C# and the .NET ecosystem through professional development work and structured training.</li>
+            <li>Also took on full-stack work with React, TypeScript and Node.js, including real-time and data-driven applications.</li>
           </ul>
           <ul class="chips">
-            <li>C#</li><li>.NET</li><li>WinForms</li><li>React</li><li>TypeScript</li><li>Node.js</li><li>MongoDB</li><li>Firebase</li>
+            <li>C#</li><li>ASP.NET</li><li>.NET</li><li>React</li><li>TypeScript</li><li>Node.js</li><li>MongoDB</li><li>Firebase</li>
           </ul>
         </div>
       </li>
@@ -365,7 +369,7 @@
         </div>
         <div class="sgroup">
           <h3 class="sgroup__title">Also in the toolbox</h3>
-          <ul class="chips chips--lg"><li>Rust</li><li>Solidity</li><li>C#</li><li>.NET</li><li>Java</li><li>Python</li><li>TypeScript</li><li>React</li><li>Angular</li></ul>
+          <ul class="chips chips--lg"><li>Rust</li><li>Solidity</li><li>C#</li><li>.NET</li><li>ASP.NET</li><li>Java</li><li>Python</li><li>TypeScript</li><li>React</li><li>Angular</li></ul>
         </div>
       </div>
 
