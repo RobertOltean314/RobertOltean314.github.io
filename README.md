@@ -100,9 +100,10 @@ file containing `robertoltean.ro` and configure DNS per
 
 ## Notes
 
-- The phone number from the CV is deliberately **not** on the site — a public
-  page invites scraping. Email only. Add it to the `#contact` section if you
-  want it there.
+- Contact details on the page are the email and phone from the CV. A public
+  page does get scraped by bots; to remove the phone later, delete the
+  `.contact__phone` line in the `#contact` section of `index.html` and the
+  `telephone` field in the JSON-LD block in `<head>`.
 - `first-test-repository` is excluded from the language chart: it is a vendored
   NXP MCUXpresso SDK (~11.8 MB of third-party C) that would otherwise show as
   ~75% of "your" code.
