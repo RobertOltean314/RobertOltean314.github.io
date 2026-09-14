@@ -14,7 +14,7 @@
     hideForks: true,
     // Vendored third-party code that would distort the language breakdown.
     excludeFromLangStats: ['first-test-repository'],
-    excludeNote: 'Public repositories only — my day-to-day Ruby on Rails work lives in private company repositories and is not counted here. Also excludes first-test-repository, a vendored NXP MCUXpresso SDK (~11.8 MB of third-party C) that would otherwise dominate the chart.'
+    excludeNote: 'Public repositories only — my day-to-day Ruby on Rails work lives in private company repositories and is not counted here.'
   };
 
   const LANG_COLORS = {

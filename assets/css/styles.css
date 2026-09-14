@@ -273,6 +273,8 @@ code { font-family: var(--mono); font-size: .9em; background: var(--surface-2); 
 .tl__org { color: var(--text-dim); font-size: 14.5px; margin: 5px 0 18px; }
 .tl__org strong { color: var(--accent); font-weight: 600; }
 .tl__intro { color: var(--text-dim); font-size: 15px; margin: 0 0 16px; max-width: 74ch; }
+.tl__intro a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent-line); transition: border-color var(--t); }
+.tl__intro a:hover { border-bottom-color: var(--accent); }
 
 .edu { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 4px; }
 .edu__label { font-size: 11.5px; color: var(--text-faint); text-transform: uppercase; letter-spacing: .07em; font-weight: 500; margin: 0; }

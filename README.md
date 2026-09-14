@@ -104,7 +104,8 @@ file containing `robertoltean.ro` and configure DNS per
   page does get scraped by bots; to remove the phone later, delete the
   `.contact__phone` line in the `#contact` section of `index.html` and the
   `telephone` field in the JSON-LD block in `<head>`.
-- `first-test-repository` is excluded from the language chart: it is a vendored
-  NXP MCUXpresso SDK (~11.8 MB of third-party C) that would otherwise show as
-  ~75% of "your" code.
+- `first-test-repository` is excluded from the language chart via
+  `CONFIG.excludeFromLangStats` in `app.js`: it is a vendored NXP MCUXpresso
+  SDK (~11.8 MB of third-party C) that would otherwise show as ~75% of "your"
+  code. The exclusion is deliberately not mentioned on the page itself.
 - Forks and the `RobertOltean314` / `CV` repositories are hidden from the grid.
