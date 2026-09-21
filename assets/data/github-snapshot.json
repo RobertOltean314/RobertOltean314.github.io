@@ -1,19 +1,36 @@
 {
-  "generated_at": "2026-09-14T06:17:41.824Z",
+  "generated_at": "2026-09-21T10:18:55.304Z",
   "profile": {
     "login": "RobertOltean314",
     "name": "Robert Oltean",
     "avatar_url": "https://avatars.githubusercontent.com/u/104785574?v=4",
     "html_url": "https://github.com/RobertOltean314",
-    "company": "@Agilefreaks ",
-    "blog": "https://www.robertoltean.ro/",
+    "company": null,
+    "blog": "https://robertoltean314.github.io/",
     "location": "Sibiu, Romania",
     "followers": 17,
     "following": 29,
-    "public_repos": 33,
+    "public_repos": 34,
     "created_at": "2022-05-02T16:55:06Z"
   },
   "repos": [
+    {
+      "name": "RobertOltean314.github.io",
+      "full_name": "RobertOltean314/RobertOltean314.github.io",
+      "html_url": "https://github.com/RobertOltean314/RobertOltean314.github.io",
+      "description": "Personal portfolio — static site backed by live GitHub data.",
+      "language": "HTML",
+      "topics": [],
+      "stargazers_count": 0,
+      "forks_count": 0,
+      "archived": false,
+      "fork": false,
+      "homepage": null,
+      "created_at": "2026-09-14T07:28:30Z",
+      "pushed_at": "2026-09-14T07:28:34Z",
+      "updated_at": "2026-09-14T07:28:38Z",
+      "size": 35
+    },
     {
       "name": "RobertOltean314",
       "full_name": "RobertOltean314/RobertOltean314",
@@ -600,6 +617,12 @@
     }
   ],
   "languages": {
+    "RobertOltean314.github.io": {
+      "HTML": 30959,
+      "CSS": 25195,
+      "JavaScript": 15443,
+      "Shell": 2430
+    },
     "RobertOltean314": {},
     "TaxChain": {
       "Solidity": 910235,
